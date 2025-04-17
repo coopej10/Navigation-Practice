@@ -12,10 +12,14 @@ var body: some View {
     NavigationStack {
         VStack {
             Text("This is the root view 🌳")
-            NavigationLink(destination: Text("You've arrived to the Second View 🎊")) {
+                .font(.headline)
+                .foregroundColor(Color.green)
+            NavigationLink(destination: SecondView()) {
                Text("Click me!")
-            }
-
+                }
+            NavigationLink(destination: Menu()) {
+                Text("Menu")
+                }
             }
         }
 
