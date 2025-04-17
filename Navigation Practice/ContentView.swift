@@ -15,12 +15,15 @@ var body: some View {
                 .font(.headline)
                 .foregroundColor(Color.green)
             NavigationLink(destination: SecondView()) {
-               Text("Click me!")
-                }
+                Text("Click me!")
+            }
             NavigationLink(destination: Menu()) {
                 Text("Menu")
                 }
             }
+        .navigationTitle("Home")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarHidden(true)
         }
 
     }
